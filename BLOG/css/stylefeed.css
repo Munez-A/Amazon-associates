@@ -1,0 +1,272 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+background-color:--var(background-color);
+color:#000;
+font-size:16px;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#header{
+display: grid;
+grid-template-columns: 0.5fr 2fr 0.5fr;
+background-color:#fff;
+color:#2e2e2e;
+grid-template-rows:50px 150px 90px;
+grid-gap:1em;
+border-bottom-color: rgb(24, 24, 24);
+height: 70px;
+}
+
+.header {
+position: fixed;
+top: 0;
+z-index: 1;
+width: 100%;
+background-color: #f1f1f1;
+}
+.logo-image{
+padding: 2px;
+height: 50px;
+border-radius:4px;
+}
+.navbar ul{
+padding-top: 2px;
+padding-left: 2em;
+}
+.navbar ul li{
+list-style-type: none;
+text-transform: uppercase;
+list-style: none;
+padding-left: 1em;
+
+font-size:120%;
+display: inline;
+}
+.navbar ul li a{
+text-decoration:none;
+color:#2e2e2e;
+}
+.navbar ul li a:hover{
+color:#259bd6;
+text-decoration:underline;
+}
+.search{
+padding-top:2em;
+}
+.search input{
+width:100%;
+height: 30px;
+padding-right: 2em;
+}
+
+
+.progress-container {
+width: 100%;
+height: 8px;
+background: #ccc;
+}
+
+.progress-bar {
+height: 8px;
+background: #259bd6;
+width: 0%;
+}
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://c148.pcloud.com/dpZaz4fC8Zvvi3yQZVY4iZZ4rtqA7ZNVZZhgLZXZrPoSpmJvjr7kg0ROVqIliRij6xV0/th-13526013359-1150x768.jpg");
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.image{
+  width:100%;
+  width:100%;
+  height:600px;
+  position:relative;
+  background-size:cover;
+}
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+  margin:0px;
+}
+.content {
+position:relative;
+padding: 1em 0;
+margin: 50px auto 0 auto;
+width: 80%;
+font-size:130%;
+}
+
+.footer{
+display:grid;
+grid-template-columns: auto auto auto;
+grid-template-rows: auto;
+color:white;
+}
+.button {
+display: block;
+border-radius: 4px;
+background-color: #259bd6;
+border: none;
+color: #FFFFFF;
+text-align: center;
+font-size: 28px;
+padding: 20px;
+width: 320px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5px;
+}
+
+.button span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+.button span:after {
+content: '\00bb';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
+
+.button:hover span {
+padding-right: 25px;
+}
+
+.button:hover span:after {
+opacity: 1;
+right: 0;
+}
+
+.footer1{
+  padding-top:2em;
+  padding-left:2em;
+}
+.social .fab, .social .fas{
+  padding-left:1em;
+  font-size:50px;
+}
+.fab, .fas{
+  padding-left:1em;
+  font-size:30px;
+}
+.fab:hover{
+  color:#259bd6;
+}
+.fe1:hover{
+  color:red;
+}
+.fe2:hover{
+color:#2861a0;
+}
+.fe3:hover{
+color:#259bd6;
+}
+.fe4:hover{
+color:red;
+}
+.fe5:hover{
+color:gray;
+}
+.footer2{
+  padding-left:1em;
+  display: inline;
+}
+.footer2 h2{
+  padding-top:3em;
+padding-left:1em;
+padding-right:1em;
+text-align: center;
+font-size:100%;
+}
+.footer2 ul{
+
+padding-top:2em;
+}
+.footer2 ul li{
+
+list-style-type: none;
+padding: 0.5em;
+display: inline;
+}
+.footer2 ul li a{
+text-align: center;
+color:white;
+text-decoration: none;
+}
+
+/* news letter */
+.container input{
+padding: 2px;
+}
+
+input[type=text], input[type=submit] {
+width: 100%;
+padding: 12px;
+margin: 8px 0;
+display: inline-block;
+box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  background-color:black;
+margin-top: 16px;
+color:black;
+}
+
+input[type=submit] {
+background-color:rgb(0, 113, 188);
+color: black;
+border: none;
+}
+
+input[type=submit]:hover {
+opacity: 0.8;
+}
+
+#footer{
+  background-image: url(../../LOGO~RELATED/footer-background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container h2{
+  color:#259bd6;
+}
+.container p{
+color:black;
+}
+.footer2 h4{
+padding-top:3em;
+text-align:center;
+border-bottom: 2px solid#FFFFFF;
+}
